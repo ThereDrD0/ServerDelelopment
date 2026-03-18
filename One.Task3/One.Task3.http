@@ -1,0 +1,6 @@
+@One.Task3_HostAddress = http://localhost:5250
+
+GET {{One.Task3_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
