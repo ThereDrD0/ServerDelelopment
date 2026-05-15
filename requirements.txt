@@ -1,0 +1,2 @@
+# Python dependencies are not used because the implementation is in C# / ASP.NET Core.
+# Project dependencies are declared in the corresponding .csproj files.
