@@ -1,0 +1,9 @@
+@Third.Task8_HostAddress = http://localhost:5017
+
+POST {{Third.Task8_HostAddress}}/todos
+Content-Type: application/json
+
+{
+  "title": "Buy groceries",
+  "description": "Milk, eggs, bread"
+}

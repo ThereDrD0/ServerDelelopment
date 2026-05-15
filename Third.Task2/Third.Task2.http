@@ -1,0 +1,14 @@
+@Third.Task2_HostAddress = http://localhost:5011
+
+POST {{Third.Task2_HostAddress}}/register
+Content-Type: application/json
+
+{
+  "username": "user1",
+  "password": "correctpass"
+}
+
+###
+
+GET {{Third.Task2_HostAddress}}/login
+Authorization: Basic dXNlcjE6Y29ycmVjdHBhc3M=

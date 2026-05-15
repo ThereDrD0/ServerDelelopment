@@ -1,0 +1,10 @@
+@Third.Task6_HostAddress = http://localhost:5015
+
+POST {{Third.Task6_HostAddress}}/register
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "123",
+  "role": "admin"
+}

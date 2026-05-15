@@ -13,4 +13,12 @@
   <Project Path="Second.Task5/Second.Task5.csproj" />
   <Project Path="Second.Task6/Second.Task6.csproj" />
   <Project Path="Second.Task7/Second.Task7.csproj" />
+  <Project Path="Third.Task1/Third.Task1.csproj" />
+  <Project Path="Third.Task2/Third.Task2.csproj" />
+  <Project Path="Third.Task3/Third.Task3.csproj" />
+  <Project Path="Third.Task4/Third.Task4.csproj" />
+  <Project Path="Third.Task5/Third.Task5.csproj" />
+  <Project Path="Third.Task6/Third.Task6.csproj" />
+  <Project Path="Third.Task7/Third.Task7.csproj" />
+  <Project Path="Third.Task8/Third.Task8.csproj" />
 </Solution>

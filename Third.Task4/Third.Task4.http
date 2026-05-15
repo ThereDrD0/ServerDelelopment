@@ -1,0 +1,9 @@
+@Third.Task4_HostAddress = http://localhost:5013
+
+POST {{Third.Task4_HostAddress}}/login
+Content-Type: application/json
+
+{
+  "username": "john_doe",
+  "password": "securepassword123"
+}

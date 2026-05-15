@@ -1,0 +1,4 @@
+@Third.Task1_HostAddress = http://localhost:5010
+
+GET {{Third.Task1_HostAddress}}/login
+Authorization: Basic dXNlcjpwYXNzd29yZA==
