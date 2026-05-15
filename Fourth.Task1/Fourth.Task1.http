@@ -1,0 +1,3 @@
+@Fourth.Task1_HostAddress = http://localhost:5018
+
+GET {{Fourth.Task1_HostAddress}}/products

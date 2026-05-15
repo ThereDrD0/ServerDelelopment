@@ -1,0 +1,3 @@
+@Fourth.Task2_HostAddress = http://localhost:5019
+
+GET {{Fourth.Task2_HostAddress}}/check

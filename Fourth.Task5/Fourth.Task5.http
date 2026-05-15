@@ -1,0 +1,9 @@
+@Fourth.Task5_HostAddress = http://localhost:5022
+
+POST {{Fourth.Task5_HostAddress}}/users
+Content-Type: application/json
+
+{
+  "username": "user",
+  "age": 20
+}
