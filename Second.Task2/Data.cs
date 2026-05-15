@@ -4,16 +4,17 @@ using System.Text.Json.Serialization;
 namespace Second.Task2;
 
 public record struct Product(
-    [Required, Range(1, int.MaxValue)] 
+    [property: JsonPropertyName("product_id")]
+    [property: Required, Range(1, int.MaxValue)]
     int ProductId,
 
-    [Required, Length(2, 50)] 
+    [property: Required, Length(2, 50)]
     string Name,
 
-    [Required] 
+    [property: Required]
     Category Category,
 
-    [Required, Range(0.01d, double.MaxValue)] 
+    [property: Required, Range(0.01d, double.MaxValue)]
     double Price
 );
 

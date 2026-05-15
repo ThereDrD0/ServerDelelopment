@@ -1,0 +1,5 @@
+@Second.Task6_HostAddress = http://localhost:5008
+
+GET {{Second.Task6_HostAddress}}/headers
+User-Agent: Mozilla/5.0
+Accept-Language: en-US,en;q=0.9

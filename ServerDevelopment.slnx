@@ -8,4 +8,9 @@
   <Project Path="One.Task7/One.Task7.csproj" />
   <Project Path="Second.Task1/Second.Task1.csproj" />
   <Project Path="Second.Task2/Second.Task2.csproj" />
+  <Project Path="Second.Task3/Second.Task3.csproj" />
+  <Project Path="Second.Task4/Second.Task4.csproj" />
+  <Project Path="Second.Task5/Second.Task5.csproj" />
+  <Project Path="Second.Task6/Second.Task6.csproj" />
+  <Project Path="Second.Task7/Second.Task7.csproj" />
 </Solution>

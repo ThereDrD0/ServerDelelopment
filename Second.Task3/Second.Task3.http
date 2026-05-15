@@ -1,0 +1,9 @@
+@Second.Task3_HostAddress = http://localhost:5005
+
+POST {{Second.Task3_HostAddress}}/login
+Content-Type: application/json
+
+{
+  "username": "user123",
+  "password": "password123"
+}

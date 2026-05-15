@@ -4,16 +4,19 @@ using Microsoft.AspNetCore.Mvc;
 namespace Second.Task2.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("")]
 public class ProductController : ControllerBase
 {
-    private static readonly List<Product> Products = new() {
+    private static readonly List<Product> Products = new()
+    {
         new(123, "Smartphone", Category.Electronics, 599.99d),
         new(456, "Phone Case", Category.Accessories, 19.99d),
-        new(789, "Iphone", Category.Electronics, 1299.99d)
+        new(789, "Iphone", Category.Electronics, 1299.99d),
+        new(101, "Headphones", Category.Accessories, 99.99d),
+        new(202, "Smartwatch", Category.Electronics, 299.99d)
     };
-    
-    [HttpGet("{product_id:int}")]
+
+    [HttpGet("product/{product_id:int}")]
     public IActionResult GetProductById(int product_id)
     {
         var product = Products.FirstOrDefault(p => p.ProductId == product_id);
@@ -23,11 +26,11 @@ public class ProductController : ControllerBase
         return Ok(product);
     }
 
-    [HttpGet("search")]
+    [HttpGet("products/search")]
     public IActionResult SearchProducts(
         [FromQuery, Required] string keyword,
         [FromQuery] Category? category,
-        [FromQuery, Range(0, 100)] int limit = 10
+        [FromQuery, Range(1, 100)] int limit = 10
     )
     {
         var results = Products.AsQueryable();
